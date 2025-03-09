@@ -41,43 +41,16 @@ public class TelaConsulta extends AppCompatActivity {
         btn_proximo = (Button) findViewById(R.id.btn_proximo);
         btn_voltar = (Button) findViewById(R.id.btn_voltar_consulta);
 
-        buscarDados();
-    }
-
-    public void fechar_tela(View v) { this.finish(); }
-
-    public void abrirBanco() {
-        try {
-            db = openOrCreateDatabase("bancoAgenda", MODE_PRIVATE, null);
-        } catch (Exception ex) {
-            CxMsg.mensagem("Erro ao abrir ou criar banco de dados!", this);
-        }
-    }
-
-    public void fecharDB() {
-        db.close();
-    }
-
-    public void buscarDados() {
-        abrirBanco();
-
-        cursor = db.query("contatos",
-                new String[]{"nome", "fone"},
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-        );
+        cursor = BancoDados.buscarTodosDados(this);
 
         if(cursor.getCount() != 0) {
-            cursor.moveToFirst();
             mostrarDados();
         } else {
             CxMsg.mensagem("Nenhum registro encontrado!", this);
         }
     }
+
+    public void fechar_tela(View v) { this.finish(); }
 
    public void proximoRegistro(View v) {
       try {

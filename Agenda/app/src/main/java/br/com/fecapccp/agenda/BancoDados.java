@@ -8,6 +8,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class BancoDados {
 
     static SQLiteDatabase db = null;
+    static Cursor cursor;
 
     public static void abrirBanco(Activity act) {
         try {
@@ -43,5 +44,21 @@ public class BancoDados {
             CxMsg.mensagem("Registro inserido com sucesso!", act);
         }
         fecharDB();
+    }
+
+    public static Cursor buscarTodosDados(Activity act) {
+        abrirBanco(act);
+
+        cursor = db.query("contatos",
+                new String[]{"nome", "fone"},
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+        cursor.moveToFirst();
+        return cursor;
     }
 }
