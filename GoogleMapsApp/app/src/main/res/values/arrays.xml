@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipos_alerta">
+        <item>Assalto</item>
+        <item>Enchente</item>
+        <item>Desabamento</item>
+        <item>Queda de árvore</item>
+        <item>Confronto policial</item>
+        <item>Outros</item>
+    </string-array>
+</resources>

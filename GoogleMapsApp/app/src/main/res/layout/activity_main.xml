@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:fontFamily="sans-serif-black"
+        android:text="UBER REPORT"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/editTextDataHora"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:hint="Data e Hora (AAAA-MM-DD HH:MM:SS)" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoAlerta"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:entries="@array/tipos_alerta" />
+
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:hint="Latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:hint="Longitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextFkIdUser"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:hint="ID do Usuário (Simulado)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCriarAlerta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Alerta" />
+
+</LinearLayout>

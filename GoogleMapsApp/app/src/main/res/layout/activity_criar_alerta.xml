@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/editTextDataHora"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:hint="Data e Hora (AAAA-MM-DD HH:MM:SS)" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoAlerta"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:entries="@array/tipos_alerta" />
+
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:hint="Latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:hint="Longitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextFkIdUser"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:hint="ID do Usuário (Simulado)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCriarAlerta"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:text="Criar Alerta" />
+
+</LinearLayout>
