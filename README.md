@@ -20,20 +20,24 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 ### [📨 Agenda](./Agenda)
 
 📌 **Objetivo:** Criar uma lista de contatos com nome e telefone, tal como uma agenda.
+
 📌 **Destaques:** Implementação do SQLite para salvar e navegar entre os contatos.  
 
 ### [🧮 AppView](./AppView)
 
 📌 **Objetivo:** Criar uma calculadora simples para operações matemáticas.  
+
 📌 **Destaques:** Implementação de interface gráfica no Android Studio.  
 
 ### [🗺️ GoogleMapsApp](./GoogleMapsApp)
 
 📌 **Objetivo:** Testes para um projeto de mobilidade urbana (Uber Report).  
+
 📌 **Destaques:** Conexão com CodeSandbox e banco de dados SQLite. 
 
 ### [🍲 Restaurante](./Restaurante)
 
 📌 **Objetivo:** Criar um app para simulação de aluguel de utensílios de restaurante.  
+
 📌 **Destaques:** Implementação de cálculo de valores com interface intuitiva. 
  
