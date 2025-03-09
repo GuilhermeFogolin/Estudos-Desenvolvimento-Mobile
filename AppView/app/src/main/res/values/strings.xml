@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculadora da FECAP</string>
+    <string name="faculdade">FECAP - Centro Universitário Álvares Penteado</string>
+    <string name="curso">Ciência da Computação</string>
+    <string name="somar">SOMAR</string>
+    <string name="subtrair">SUBTRAIR</string>
+    <string name="multiplicar">MULTIPLICAR</string>
+    <string name="dividir">DIVIDIR</string>
+    <string name="valor1">Digite o primeiro valor: </string>
+    <string name="valor2">Digite o segundo valor: </string>
+    <string name="calculadora_da_fecap">Calculadora da FECAP</string>
+</resources>
