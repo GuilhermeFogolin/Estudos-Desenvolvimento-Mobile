@@ -19,7 +19,7 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 ### [📨 Agenda](./Agenda)
 
-📌 **Objetivo:** Criar uma lista de contatos com nome e telefone.  
+📌 **Objetivo:** Criar uma lista de contatos com nome e telefone, tal como uma agenda.
 📌 **Destaques:** Implementação do SQLite para salvar e navegar entre os contatos.  
 
 ### [🧮 AppView](./AppView)
