@@ -7,14 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import android.database.sqlite.SQLiteDatabase; // Importe para o banco de dados
-import android.database.Cursor; // Importe para a navegação de registros
 import android.widget.*; // Importe de todos os componentes para trabalhar com programação
 
 public class MainActivity extends AppCompatActivity {
@@ -22,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
     EditText et_nome, et_telefone;
 
     Button btn_gravar, btn_consultar, btn_fechar;
-
-    SQLiteDatabase db = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,34 +37,10 @@ public class MainActivity extends AppCompatActivity {
         btn_consultar = (Button) findViewById(R.id.btn_consultar);
         btn_fechar = (Button) findViewById(R.id.btn_fechar);
 
-        abrirBanco();
-        abrirOuCriarTabela();
-        fecharDB();
+        BancoDados.abrirBanco(this);
+        BancoDados.abrirOuCriarTabela(this);
+        BancoDados.fecharDB();
     }
-
-    public void abrirBanco() {
-        try {
-            db = openOrCreateDatabase("bancoAgenda", MODE_PRIVATE, null);
-        } catch (Exception ex) {
-            CxMsg.mensagem("Erro ao abrir ou criar banco de dados!", this);
-        }
-    }
-
-    public void fecharDB() {
-        db.close();
-    }
-
-    public void abrirOuCriarTabela() {
-        try {
-            db.execSQL("CREATE TABLE IF NOT EXISTS contatos(" +
-                    "id INTEGER PRIMARY KEY, " +
-                    "nome TEXT," +
-                    "fone TEXT);");
-        } catch (Exception ex) {
-            CxMsg.mensagem("Erro ao abrir ou criar tabela!", this);
-        }
-    }
-
     public void inserirRegistro(View v) {
 
         String st_nome, st_fone;
@@ -79,16 +50,8 @@ public class MainActivity extends AppCompatActivity {
             CxMsg.mensagem("Campos não podem estar vazios!", this);
             return;
         }
-        abrirBanco();
-       try {
-            db.execSQL("INSERT INTO contatos(nome, fone) VALUES ('"+st_nome+"', '"+st_fone+"')"); // Concatenação no final
-       } catch (Exception ex) {
-           CxMsg.mensagem("Erro ao inserir registro!", this);
-       } finally {
-           CxMsg.mensagem("Registro inserido com sucesso!", this);
-       }
-       fecharDB();
 
+        BancoDados.inserirRegistro(st_nome, st_fone, this);
        et_nome.setText(null);
        et_telefone.setText(null);
     }
