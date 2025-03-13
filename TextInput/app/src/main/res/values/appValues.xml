@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // String do Projeto
+
+    <string name= "appTitulo"> INPUT </string>
+    <string name= "appBtnSet"> Enviar </string>
+    <string name= "appBtnReset"> Limpar </string>
+    <string name= "appPlan1"> Nome: </string>
+    <string name= "appPlan2"> Idade: </string>
+    <string name= "appHintPlan1"> Digite seu nome: </string>
+    <string name= "appHintPlan2"> Digite sua idade: </string>
+    <string name= "appResultado"> ----- </string>
+
+    // Cores do projeto
+
+    <color name = "appColor1"> #FF0000 </color>
+    <color name = "appColor2"> #FFFFFF </color>
+
+</resources>
