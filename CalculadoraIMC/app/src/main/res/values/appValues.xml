@@ -9,7 +9,7 @@
     <string name= "appPlan1"> Nome: </string>
     <string name= "appPlan2"> Idade: </string>
     <string name= "appHintPlan1"> Digite seu peso (em kg): </string>
-    <string name= "appHintPlan2"> Digite sua altura (em cm): </string>
+    <string name= "appHintPlan2"> Digite sua altura (em m): </string>
     <string name= "appResultado"> ----- </string>
 
     // Cores do projeto

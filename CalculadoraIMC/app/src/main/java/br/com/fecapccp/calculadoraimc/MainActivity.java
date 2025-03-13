@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,21 +31,35 @@ public class MainActivity extends AppCompatActivity {
 
     public void enviar(View v) {
 
-        // Instanciamento dos objetos do app:
+        // Instanciamento dos objetos do app
 
         EditText campoPeso = findViewById(R.id.et_peso);
         EditText campoAltura = findViewById(R.id.et_altura);
         TextView resultado = findViewById(R.id.tv_resultado);
 
-        // Cálculos
+        // Variáveis para recuperar (get) e converter em String os objetos!
 
-        double peso = Double.parseDouble(campoPeso.getText().toString());
-        double altura = Double.parseDouble(campoAltura.getText().toString());
-        double calcular = peso / altura;
+        String peso = campoPeso.getText().toString();
+        String altura = campoAltura.getText().toString();
 
-        // Apresentar o resultado
+        // Converter os dados peso e altura em NUMÉRICO e calcular o IMC:
 
-        resultado.setText("Seu IMC é " + String.format("%.3f", calcular) + "!");
+        double numPeso = Double.parseDouble(peso);
+        double numAltura = Double.parseDouble(altura);
+
+        double calcular = numPeso / (numAltura * numAltura);
+
+        // Converter o calcular para String
+
+        String imc = String.valueOf(calcular);
+
+        // Formatar imc em três casas decimais
+
+        DecimalFormat df = new DecimalFormat("##.###");
+
+        imc = df.format(calcular);
+
+        resultado.setText(imc + " kg/m²");
     }
 
     // Método para Resetar informações
