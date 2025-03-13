@@ -59,7 +59,28 @@ public class MainActivity extends AppCompatActivity {
 
         imc = df.format(calcular);
 
-        resultado.setText(imc + " kg/m²");
+        // Validação de IMC
+
+        /* Abaixo do peso: IMC menor que 18,5
+        Eutrófico (peso adequado): IMC entre 18,5 e 24,9
+        Sobrepeso: IMC entre 25 e 29,9
+        Obesidade grau I: IMC entre 30 e 34,9
+        Obesidade grau II: IMC entre 35 e 39,9
+        Obesidade grau III: IMC igual ou superior a 40 */
+
+        if(calcular < 18.5) {
+            resultado.setText(imc + " kg/m²! \nAbaixo do peso");
+        } else if(calcular < 25) {
+            resultado.setText(imc + " kg/m²! \nEutrófico (peso adequado)");
+        } else if(calcular < 30) {
+            resultado.setText(imc + " kg/m²! \nSobrepeso");
+        } else if(calcular < 35) {
+            resultado.setText(imc + " kg/m²! \nObesidade grau I");
+        } else if(calcular < 40) {
+            resultado.setText(imc + " kg/m²! \nObesidade grau II");
+        } else {
+            resultado.setText(imc + " kg/m²! \nObesidade grau III");
+        }
     }
 
     // Método para Resetar informações
