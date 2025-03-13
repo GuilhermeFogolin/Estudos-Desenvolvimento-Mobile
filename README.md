@@ -29,6 +29,12 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 📌 **Destaques:** Implementação de interface gráfica no Android Studio.  
 
+### [📟 Calculadora de IMC](./CalculadoraIMC)
+
+📌 **Objetivo:** Calculadora básica para calcular IMC.
+
+📌 **Destaques:** Entrada, saída e validação de dados.
+
 ### [🗺️ GoogleMapsApp](./GoogleMapsApp)
 
 📌 **Objetivo:** Testes para um projeto de mobilidade urbana (Uber Report).  
@@ -40,4 +46,10 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 📌 **Objetivo:** Criar um app para simulação de aluguel de utensílios de restaurante.  
 
 📌 **Destaques:** Implementação de cálculo de valores com interface intuitiva. 
+
+### [🍲 TextInput](./TextInput)
+
+📌 **Objetivo:** Simular entrada e saída de dados.
+
+📌 **Destaques:** Desenvolvimento de layouts em XML.
  
