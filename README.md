@@ -47,7 +47,7 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 📌 **Destaques:** Implementação de cálculo de valores com interface intuitiva. 
 
-### [🍲 TextInput](./TextInput)
+### [🧷 TextInput](./TextInput)
 
 📌 **Objetivo:** Simular entrada e saída de dados.
 
