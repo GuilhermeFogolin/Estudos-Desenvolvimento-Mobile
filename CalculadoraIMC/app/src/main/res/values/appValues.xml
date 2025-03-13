@@ -14,7 +14,9 @@
 
     // Cores do projeto
 
-    <color name = "appColor1"> #0D9AFF </color>
+    <color name = "appColor1">#363EE4</color>
     <color name = "appColor2"> #FFFFFF </color>
+    <color name = "appColor3">#1254DC</color>
+    <color name = "appColor4">#DADAFF</color>
 
 </resources>
