@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cores do Projeto -->
+    <color name = "appColor1"> #0000FF </color>
+    <color name = "appColor2"> #FFFFFF </color>
+    <color name = "appColor3"> #000000 </color>
+
+
+    <!-- Tela 1 - String do Projeto -->
+    <string name = "appT1Titulo"> TELA 1 </string>
+    <string name = "appT1Resultado"> Resultado </string>
+    <string name = "appT1BtnSet"> Próxima </string>
+    <string name = "appT1BtnReset"> Voltar </string>
+
+    <!-- Tela 2 - String do Projeto -->
+    <string name = "appT2Titulo"> TELA 2 </string>
+    <string name = "appT2Resultado"> Resultado </string>
+    <string name = "appT2BtnSet"> Próxima </string>
+    <string name = "appT2BtnReset"> Voltar </string>
+
+    <!-- Tela 3 - String do Projeto -->
+    <string name = "appT3Titulo"> TELA 3 </string>
+    <string name = "appT3Resultado"> Resultado </string>
+    <string name = "appT3BtnSet"> Próxima </string>
+    <string name = "appT3BtnReset"> Voltar </string>
+
+
+</resources>
