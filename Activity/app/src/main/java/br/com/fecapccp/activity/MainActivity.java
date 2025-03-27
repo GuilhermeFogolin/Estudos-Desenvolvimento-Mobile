@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Instanciamento dos elementos Views
 
-    private Button btnT1Set;
+    private Button btnT1Set; // Para usar em qualquer outro mé_todo. Quando "fora" não precisar ficar repetindo.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Chamar a Próxima Tela 2 + Transferir valores:
 
-        btnT1Set.setOnClickListener(view -> {
+        btnT1Set.setOnClickListener(view -> { // FUNÇÃO ANÔNIMA, pois não retorna nada.
 
             // Intenção? Qual tela vou chamar após clicar nesse botão?
             Intent intent = new Intent(this, MainActivity2.class);

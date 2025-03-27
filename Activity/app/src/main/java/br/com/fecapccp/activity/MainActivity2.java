@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         btnT2Set = findViewById(R.id.btnT2Set);
         btnT2Reset = findViewById(R.id.btnT2Reset);
 
-        // Recebendo os dados:
+        // Recebendo os dados: Recebe intenção e os itens extras.
 
         Bundle bundle = getIntent().getExtras();
 
