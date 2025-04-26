@@ -2,7 +2,7 @@
 
 Este repositório contém projetos desenvolvidos para aprimorar conhecimentos em **desenvolvimento mobile** com **Android Studio e Java**.  
 
-Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem de banco de dados, SQLite e lógica de programação**.
+Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem de banco de dados, SQL e lógica de programação**.
 
 ---
 
@@ -16,6 +16,12 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 ---
 
 ## 📂 Aplicativos
+
+### [📲 Activity](./Activity)
+
+📌 **Objetivo:** Trabalhar com a transferência de dados entre diferentes telas.
+
+📌 **Destaques:** Ciclo de vida de apps Android, envio e recebimento de dados.
 
 ### [📨 Agenda](./Agenda)
 
