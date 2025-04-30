@@ -57,7 +57,8 @@
         android:textAlignment="center"
         android:background="@color/blue"
         android:textSize="20sp"
-        android:fontFamily="monospace"/>
+        android:fontFamily="monospace"
+        android:onClick="recuperarDados"/>
 
     <TextView
         android:id="@+id/textResultado"

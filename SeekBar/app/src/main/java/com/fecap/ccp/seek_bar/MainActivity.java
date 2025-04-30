@@ -1,6 +1,7 @@
 package com.fecap.ccp.seek_bar;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -26,19 +27,22 @@ public class MainActivity extends AppCompatActivity {
         seekBarEscala.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                textResultado.setText("onProgress");
+                textResultado.setText("Sua felicidade é: " + i + " de " + seekBar.getMax());
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                textResultado.setText("onStart");
+                textResultado.setText("Iniciando leitura da felicidade...");
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                textResultado.setText("onStop");
+
             }
         });
 
+    }
+    public void recuperarDados(View view) {
+        textResultado.setText("Registro da felicidade: " + seekBarEscala.getProgress());
     }
 }
