@@ -10,7 +10,7 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Quão feliz você está hoje?"
@@ -22,14 +22,14 @@
         android:textColor="@color/blue"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgSmile"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_gravity="center"
         app:srcCompat="@drawable/smile" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textOrientacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Em uma escala de 0 a 10: "
@@ -40,11 +40,35 @@
         android:fontFamily="monospace"/>
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBarEscala"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="10"
         android:padding="10sp"
         android:progress="5" />
+
+    <Button
+        android:id="@+id/btnClassificar"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Classificar felicidade"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:background="@color/blue"
+        android:textSize="20sp"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAlignment="center"/>
 
 </LinearLayout>
