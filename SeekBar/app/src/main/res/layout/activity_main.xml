@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quão feliz você está hoje?"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textColor="@color/blue"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/smile" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Em uma escala de 0 a 10: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:padding="10sp"
+        android:progress="5" />
+
+</LinearLayout>
