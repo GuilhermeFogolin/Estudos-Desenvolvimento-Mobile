@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             // Calcular a gorjeta total:
 
             double gorjeta = valorDigitado * (porcentagem / 100);
+            double toal = gorjeta + valorDigitado;
 
             // Exibir a gorjeta
 
