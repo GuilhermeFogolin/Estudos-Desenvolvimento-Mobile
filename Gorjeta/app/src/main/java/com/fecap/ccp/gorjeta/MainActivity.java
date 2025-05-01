@@ -11,10 +11,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText editValor;
-    private TextView text_porcentagem, text_gorjeta, text_total;
+    private TextView text_porcentagem, text_gorjeta, text_total, text_resultado;
     private SeekBar seekBarGorjeta;
     private double porcentagem = 0;
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         text_gorjeta = findViewById(R.id.text_gorjeta);
         text_porcentagem = findViewById(R.id.text_porcentagem);
         text_total = findViewById(R.id.text_total);
+        text_resultado = findViewById(R.id.text_resultado);
         seekBarGorjeta = findViewById(R.id.seekBarGorjeta);
 
         // Manipulação sem botão: Seekbar - "ouvinte"
@@ -56,7 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (valorRecuperado == null || valorRecuperado.equals("")) {
 
+            text_resultado.setText("ERRO - Entrada inválida! 🚨");
+
         } else {
+
+            // Apagando RESULTADO
+
+            text_resultado.setText("");
 
             // Converter String para Double
 
@@ -65,11 +74,13 @@ public class MainActivity extends AppCompatActivity {
             // Calcular a gorjeta total:
 
             double gorjeta = valorDigitado * (porcentagem / 100);
-            double toal = gorjeta + valorDigitado;
+            double total = gorjeta + valorDigitado;
 
             // Exibir a gorjeta
 
-            text_gorjeta.setText("R$" + gorjeta);
+            DecimalFormat df = new DecimalFormat("##.##");
+            text_gorjeta.setText("R$" + df.format(gorjeta));
+            text_total.setText("R$" + df.format(total));
         }
     }
 }
