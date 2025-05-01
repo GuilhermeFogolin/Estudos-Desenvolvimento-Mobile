@@ -100,13 +100,14 @@
         android:fontFamily="monospace"
         android:text="R$0.00"
         android:textAlignment="center"
+        android:textColor="@color/branco"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/branco"
+        app:layout_constraintBottom_toTopOf="@+id/text_total"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/title_gorjeta"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintTop_toBottomOf="@+id/text_porcentagem" />
 
     <TextView
         android:id="@+id/text_total"
@@ -118,13 +119,13 @@
         android:fontFamily="monospace"
         android:text="R$0.00"
         android:textAlignment="center"
+        android:textColor="@color/branco"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/title_total"
-        tools:layout_editor_absoluteY="587dp" />
+        app:layout_constraintTop_toBottomOf="@+id/title_gorjeta" />
 
     <SeekBar
         android:id="@+id/seekBarGorjeta"
