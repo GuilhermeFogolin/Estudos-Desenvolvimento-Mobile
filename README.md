@@ -47,6 +47,12 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 📌 **Destaques:** Conexão com CodeSandbox e banco de dados SQLite. 
 
+### [💰 Gorjeta](./Gorjeta)
+
+📌 **Objetivo:** Criar uma funcionalidade para dar gorjeta, somar com o valor da compra e exibir o resultado total.
+
+📌 **Destaques:** Validação de campos, formatação de dados e SeekBar.
+
 ### [🍲 Restaurante](./Restaurante)
 
 📌 **Objetivo:** Criar um app para simulação de aluguel de utensílios de restaurante.  
