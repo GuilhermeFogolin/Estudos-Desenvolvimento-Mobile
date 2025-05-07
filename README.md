@@ -61,7 +61,7 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 ### [📶 SeekBar](./SeekBar)
 
-📌 **Objetivo:** Criar uma escala de O até 10 para classificar a felicidade.
+📌 **Objetivo:** Criar uma escala de 0 até 10 para classificar a felicidade.
 
 📌 **Destaques:** Usos e validações de dados com SeekBar, visualizando uma barra de progresso.
 
