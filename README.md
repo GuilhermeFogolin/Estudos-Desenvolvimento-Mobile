@@ -65,6 +65,12 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 📌 **Destaques:** Usos e validações de dados com SeekBar, visualizando uma barra de progresso.
 
+### [🎥 SeekBar_V2](./SeekBar_V2)
+
+📌 **Objetivo:** Implementar controle de vídeo com SeekBar.
+
+📌 **Destaques:** SeekBar, controle de progresso, pause, play e stop. 
+
 ### [🧷 TextInput](./TextInput)
 
 📌 **Objetivo:** Simular entrada e saída de dados.
