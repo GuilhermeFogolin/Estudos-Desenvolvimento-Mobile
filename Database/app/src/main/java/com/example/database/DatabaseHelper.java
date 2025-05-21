@@ -93,4 +93,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return linhasAfetadas > 0;
     }
 
+    // Metodo para deletar um registro da tabela pelo nome
+
+    public boolean deletarDados(String nome) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int linhasAfetadas = db.delete(
+                TABLE_NAME,
+                COL_2 + " = ?",
+                new String[]{nome}
+        );
+
+        db.close();
+
+        return linhasAfetadas > 0;
+    }
+
 }
