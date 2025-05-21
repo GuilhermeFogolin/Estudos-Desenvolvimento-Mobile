@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     Button btnAtualizar;
     Button btnDeletar;
 
+    // Database também é um OBJETO
+    DatabaseHelper dbHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnConsultar = findViewById(R.id.btnConsultar);
         btnAtualizar = findViewById(R.id.btnAtualizar);
         btnDeletar = findViewById(R.id.btnDeletar);
+        dbHelper = new DatabaseHelper(this);
 
         btnGravar.setOnClickListener(v -> {
 
@@ -54,6 +58,16 @@ public class MainActivity extends AppCompatActivity {
             // Dados validos
 
             // Implementação após criação do banco de dados
+
+            try{ // Chamadas assíncronas - Se a chama retornou e foi correta
+
+                // Converter idade de String -> int
+
+            } catch (NumberFormatException e) { // Aqui vai exceção
+                Toast.makeText(MainActivity.this,
+                        "Erro ao inserir dados! 🤒",
+                        Toast.LENGTH_LONG).show();
+            }
         });
 
         btnConsultar.setOnClickListener(v -> {
