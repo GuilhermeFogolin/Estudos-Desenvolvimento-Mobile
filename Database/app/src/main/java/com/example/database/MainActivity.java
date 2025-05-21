@@ -63,6 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
                 // Converter idade de String -> int
 
+                int numIdade = Integer.parseInt(idade);
+
+                // Chamar o metodo gravar do DB
+
+                if(dbHelper.inserirDados(nome, numIdade)) {
+                    Toast.makeText(MainActivity.this,
+                            "Dados inseridos com sucesso!",
+                            Toast.LENGTH_LONG).show();
+                }
+
             } catch (NumberFormatException e) { // Aqui vai exceção
                 Toast.makeText(MainActivity.this,
                         "Erro ao inserir dados! 🤒",
