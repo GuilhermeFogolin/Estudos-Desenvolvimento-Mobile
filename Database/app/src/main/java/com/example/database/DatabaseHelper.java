@@ -75,4 +75,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 null);
     }
 
+    // Metodo para atualizar a idade pelo nome
+
+    public boolean atualizarDadso(String nome, int novaIdade) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues valores = new ContentValues();
+        valores.put(COL_3, novaIdade);
+        int linhasAfetadas = db.update(
+                TABLE_NAME,
+                valores,
+                COL_2 + " = ?",
+                new String[]{nome}
+        );
+
+        db.close();
+
+        return linhasAfetadas > 0;
+    }
+
 }
