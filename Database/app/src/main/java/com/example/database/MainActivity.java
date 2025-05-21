@@ -1,5 +1,6 @@
 package com.example.database;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -98,6 +99,17 @@ public class MainActivity extends AppCompatActivity {
             // Dados validados
 
             // Implementação após criação do banco de dados
+
+            Cursor cursor = dbHelper.obterIdadePorNome(nome);
+
+            if(cursor != null && cursor.moveToFirst()) {
+                String idade = cursor.getString(0);
+                textResultado.setText("Idade: " + idade);
+            } else {
+                Toast.makeText(MainActivity.this,
+                        "Usuário não encontrado...",
+                        Toast.LENGTH_LONG).show();
+            }
         });
 
         btnAtualizar.setOnClickListener(v -> {
