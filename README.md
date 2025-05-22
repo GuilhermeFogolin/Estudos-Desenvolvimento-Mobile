@@ -12,6 +12,7 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![IntelliJ](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
 
@@ -21,59 +22,66 @@ Todos os apps foram criados como parte do meu aprendizado sobre **POO, modelagem
 
 📌 **Objetivo:** Trabalhar com a transferência de dados entre diferentes telas.
 
-📌 **Destaques:** Ciclo de vida de apps Android, envio e recebimento de dados.
+✅ **Destaques:** Ciclo de vida de apps Android, envio e recebimento de dados.
 
 ### [📨 Agenda](./Agenda)
 
 📌 **Objetivo:** Criar uma lista de contatos com nome e telefone, tal como uma agenda.
 
-📌 **Destaques:** Implementação do SQLite para salvar e navegar entre os contatos.  
+✅ **Destaques:** Implementação do SQLite para salvar e navegar entre os contatos.  
 
 ### [🧮 AppView](./AppView)
 
 📌 **Objetivo:** Criar uma calculadora simples para operações matemáticas.  
 
-📌 **Destaques:** Implementação de interface gráfica no Android Studio.  
+✅ **Destaques:** Implementação de interface gráfica no Android Studio.  
 
 ### [📟 Calculadora de IMC](./CalculadoraIMC)
 
 📌 **Objetivo:** Calculadora básica para calcular IMC.
 
-📌 **Destaques:** Entrada, saída e validação de dados.
+✅ **Destaques:** Entrada, saída e validação de dados.
+
+### [🎲 Database](./Database)
+
+📌 **Objetivo:** Armazenar, consultar, atualizar e deletar dados informados pelo usuário.
+
+✅ **Destaques:** Implementação de queries SQL para criação de database com SQLite.
+
 
 ### [🗺️ GoogleMapsApp](./GoogleMapsApp)
 
 📌 **Objetivo:** Testes para um projeto de mobilidade urbana (Uber Report).  
 
-📌 **Destaques:** Conexão com CodeSandbox e banco de dados SQLite. 
+✅ **Destaques:** Conexão com CodeSandbox e banco de dados SQLite. 
 
 ### [💰 Gorjeta](./Gorjeta)
 
 📌 **Objetivo:** Criar uma funcionalidade para dar gorjeta, somar com o valor da compra e exibir o resultado total.
 
-📌 **Destaques:** Validação de campos, formatação de dados e SeekBar.
+✅ **Destaques:** Validação de campos, formatação de dados e SeekBar.
 
 ### [🍲 Restaurante](./Restaurante)
 
 📌 **Objetivo:** Criar um app para simulação de aluguel de utensílios de restaurante.  
 
-📌 **Destaques:** Implementação de cálculo de valores com interface intuitiva. 
+✅ **Destaques:** Implementação de cálculo de valores com interface intuitiva. 
 
 ### [📶 SeekBar](./SeekBar)
 
 📌 **Objetivo:** Criar uma escala de 0 até 10 para classificar a felicidade.
 
-📌 **Destaques:** Usos e validações de dados com SeekBar, visualizando uma barra de progresso.
+✅ **Destaques:** Usos e validações de dados com SeekBar, visualizando uma barra de progresso.
 
 ### [🎥 SeekBar_V2](./SeekBar_V2)
 
 📌 **Objetivo:** Implementar controle de vídeo com SeekBar.
 
-📌 **Destaques:** SeekBar, controle de progresso, pause, play e stop. 
+✅ **Destaques:** SeekBar, controle de progresso, pause, play e stop. 
 
 ### [🧷 TextInput](./TextInput)
 
 📌 **Objetivo:** Simular entrada e saída de dados.
 
-📌 **Destaques:** Desenvolvimento de layouts em XML.
+✅ **Destaques:** Desenvolvimento de layouts em XML.
  
